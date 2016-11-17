@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   padding: 0;
@@ -16,7 +20,6 @@ body {
 
 main {
   flex: 1 0 auto;
-  display: flex;
 }
 
 a {
@@ -30,6 +33,7 @@ a:visited {
 }
 
 nav {
+  z-index: 10;
   position: fixed;
   padding: 10px;
   width: 100%;
@@ -62,13 +66,28 @@ footer {
   text-align: center;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #000;
+  margin: 10px 0;
+  padding: 0;
+}
+
 .container {
   max-width: 960px;
+  padding: 20px;
   margin: 0 auto;
 }
 
+.dark {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
 .hero {
-  background-image: url('assets/stronk.jpg');
+  background-image: url('assets/abs.jpg');
   background-size: cover;
   background-position: center top;
   height: 40vw;
@@ -78,4 +97,38 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 2em;
+}
+
+.hero h1,
+.hero p {
+  margin: 0;
+}
+
+.inter {
+  height: 40vw;
+  min-height: 700px;
+  padding: 40px;
+  background-image: url('assets/deadlift.jpg');
+  background-size: cover;
+  background-position: center top;
+  filter: grayscale(0.8);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.inter .container {
+  max-width: 700px;
+  padding: 0;
+}
+
+.inter {
+  font-size: 1.4em;
+}
+
+.inter h1 {
+  text-transform: uppercase;
 }
