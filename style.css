@@ -152,6 +152,16 @@ a.btn {
   max-width: 300px;
   margin: 0 auto;
   cursor: pointer;
+  background: LightSeaGreen;
+  border: none;
+  color: white;
+  transition: all .2s;
+}
+
+input[type=submit]:hover,
+button:hover,
+a.btn:hover {
+  background: teal;
 }
 
 .contact-form {
