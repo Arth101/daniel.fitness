@@ -43,11 +43,31 @@
       </div>
 
       <div class="container">
-        <form action="https://formspree.io/andersenghoej@gmail.com" method="POST">
-          <label for="form-name">Name</label>
-          <input type="text" name="name">
-          <label for="form-email">Email</label>
-          <input type="email" name="_replyto">
+        <h1>Kontakt mig</h1>
+        <p>Hvis du vil have et tilbud eller vil vide mere om mine kompetancer</p>
+        <form class="contact-form" action="https://formspree.io/andersenghoej@gmail.com" method="POST">
+          <div class="col-6">
+            <label for="form-name">Navn</label>
+            <input type="text" name="name">
+          </div>
+          <div class="col-6">
+            <label for="form-email">Email</label>
+            <input type="email" name="email">
+          </div>
+          <div class="col-6">
+          <label for="form-goal">Hvad er dit mål?</label>
+            <select name="goal">
+              <option disabled selected>Vælg et mål</option>
+              <option>Bygge muskel</option>
+              <option>Fedttab</option>
+              <option>Blive sundere</option>
+              <option>Andet</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="form-goal">Kommentare (valgfri)</label>
+            <textarea name="comments" rows="1" cols="40"></textarea>
+          </div>
           <input type="submit" value="Send">
         </form>
       </div>
