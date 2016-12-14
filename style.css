@@ -102,7 +102,7 @@ hr {
 }
 
 .hero {
-  background-image: url('assets/abs.jpg');
+  background-image: url('assets/hero.jpg');
   background-size: cover;
   background-position: center top;
   height: 40vw;
@@ -124,7 +124,7 @@ hr {
   height: 40vw;
   min-height: 700px;
   padding: 40px;
-  background-image: url('assets/deadlift.jpg');
+  background-image: url('assets/lookup.jpg');
   background-size: cover;
   background-position: center top;
   filter: grayscale(0.8);
