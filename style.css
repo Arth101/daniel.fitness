@@ -32,6 +32,10 @@ a:visited {
   color: inherit;
 }
 
+a:hover {
+  color: RoyalBlue;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,7 +66,7 @@ nav ul li {
 }
 
 nav a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: RoyalBlue;
 }
 /*@media(max-width: 900px){
   nav ul {
@@ -92,7 +96,7 @@ hr {
 
 .container {
   max-width: 960px;
-  padding: 20px;
+  padding: 50px 20px;
   margin: 0 auto;
 }
 
@@ -102,7 +106,7 @@ hr {
 }
 
 .hero {
-  background-image: url('assets/hero.jpg');
+  background-image: url('assets/hero2.jpg');
   background-size: cover;
   background-position: center top;
   height: 40vw;
@@ -114,16 +118,28 @@ hr {
   text-align: center;
   font-size: 2em;
 }
+@media(max-width:600px) {
+  .hero {
+    background-image: url('assets/hero-mobile.jpg');
+    height: 400px;
+    align-items: flex-end;
+  }
+}
 
 .hero h1,
 .hero p {
   margin: 0;
 }
+@media(max-width:600px) {
+  .hero h1 {
+    font-size: 1.5em;
+  }
+}
 
 .inter {
   height: 40vw;
-  min-height: 700px;
-  padding: 40px;
+  min-height: 900px;
+  padding: 50px 40px;
   background-image: url('assets/lookup.jpg');
   background-size: cover;
   background-position: center top;
@@ -133,6 +149,12 @@ hr {
   justify-content: center;
   align-items: flex-end;
   text-align: center;
+}
+@media(max-width: 600px) {
+  .inter {
+    min-height: 750px;
+    padding: 40px 20px;
+  }
 }
 
 .inter .container {
@@ -146,6 +168,7 @@ hr {
 
 .inter h1 {
   text-transform: uppercase;
+  font-weight: lighter;
 }
 
 label {
@@ -162,16 +185,20 @@ textarea {
   font-family: 'Open Sans', sans-serif;
 }
 
+select {
+  padding: 9px;
+}
+
 input[type=submit],
 button,
 a.btn {
   max-width: 300px;
   margin: 0 auto;
   cursor: pointer;
-  background: LightSeaGreen;
+  background: RoyalBlue;
   border: none;
   color: white;
-  transition: all .2s;
+  transition: all 0.2s;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
