@@ -1,0 +1,16 @@
+{
+  "name": "levpt",
+  "version": "0.0.1",
+  "description": "The site for personal trainer Daniel Beck",
+  "repository": "git@github.com:ToxicDonkeyButts/daniel.fitness.git",
+  "author": "ToxicDonkeyButts",
+  "scripts": {
+    "serve": "node_modules/.bin/http-server"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
