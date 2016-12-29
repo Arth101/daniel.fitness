@@ -36,6 +36,15 @@ a:hover {
   color: RoyalBlue;
 }
 
+h1, h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -123,7 +132,12 @@ hr {
     background-image: url('assets/hero-mobile.jpg');
     height: 400px;
     align-items: flex-end;
+    font-size: 8vw;
   }
+}
+
+.hero h1 {
+  font-weight: bold;
 }
 
 .hero h1,
@@ -139,26 +153,31 @@ hr {
 .inter {
   min-height: 900px;
   padding: 50px 40px;
+  padding-left: 10%;
   background-image: url('assets/lookup.jpg');
   background-size: cover;
-  background-position: center top;
+  background-position: left top;
   filter: grayscale(0.2);
   display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: center;
+  justify-content: flex-start;;
+  align-items: center;
+}
+@media(max-width: 1200px) {
+  .inter {
+    background-position: 40% top;
+  }
 }
 @media(max-width: 600px) {
   .inter {
     min-height: 750px;
     padding: 40px 20px;
+    background-position: 58% top;
   }
 }
 
-.inter .container {
+.inter div {
   max-width: 700px;
-  padding: 0;
 }
 
 .inter {
@@ -245,6 +264,74 @@ q {
   font-weight: bold;
   display: block;
   text-align: center;
+}
+
+.first p {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.selling-points {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.selling-points h2 {
+  text-transform: none;
+}
+
+.three-step {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.three-step i.fa {
+  font-size: 5em;
+  background: royalblue;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.three-step div {
+  width: calc(33.33% - 8px);
+  margin: 0 4px;
+}
+
+.three-step div p {
+  font-size: 1em;
+}
+@media(max-width: 600px) {
+  .three-step div p {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .three-step div {
+    width: calc(33.33% - 8px);
+    margin: 0 4px;
+  }
+  .three-step i.fa {
+    width: 100%;
+    height: auto;
+    font-size: 16vw;
+  }
+}
+
+.three-step h3 {
+  color: royalblue;
+  margin-top: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .info {
