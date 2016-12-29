@@ -137,13 +137,12 @@ hr {
 }
 
 .inter {
-  height: 40vw;
   min-height: 900px;
   padding: 50px 40px;
   background-image: url('assets/lookup.jpg');
   background-size: cover;
   background-position: center top;
-  filter: grayscale(0.8);
+  filter: grayscale(0.2);
   display: flex;
   width: 100%;
   justify-content: center;
