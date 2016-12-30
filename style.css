@@ -209,6 +209,8 @@ textarea {
   background-color: white;
   border: 1px solid black;
   font-family: 'Open Sans', sans-serif;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 input:focus ~ label {
