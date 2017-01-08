@@ -66,9 +66,43 @@ nav a {
   color: white;
 }
 
+nav .brand, nav .burger i {
+  font-size: 1.5em;
+  min-width: 21px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.social li  {
+  display: inline-block;
+  margin-right: 10px;
+}
+@media(max-width: 370px) {
+  nav ul.social li  {
+    display: block;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+nav ul.sub-menu li {
+  margin-top: 10px;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: RoyalBlue;
+}
+
 nav .burger {
   display: none;
 }
+
 @media(max-width: 600px) {
   nav .burger {
     display: inline-block;
@@ -89,32 +123,6 @@ nav .burger {
     background: rgba(65, 105, 225, 0.81);
     border-radius: 4px;
   }
-}
-
-nav .brand, nav .burger i {
-  font-size: 1.5em;
-  min-width: 21px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul.social li  {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul.sub-menu li {
-  margin-top: 10px;
-  margin-right: 15px;
-  display: inline-block;
-}
-
-nav a:hover {
-  color: RoyalBlue;
 }
 
 footer {
