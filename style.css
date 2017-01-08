@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 * {
   box-sizing: border-box;
@@ -9,7 +16,7 @@ html {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "system";
 }
 
 body {
@@ -48,7 +55,6 @@ h1, h2 {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   z-index: 10;
   position: absolute;;
   padding: 15px 20px;
@@ -56,12 +62,25 @@ nav {
   color: white;
 }
 
-nav .brand, nav .fa-bars {
-  font-size: 1.5em;
+nav .burger {
+  display: none;
+}
+@media(max-width: 600px) {
+  nav .burger {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav .social {
+    display: none;
+  }
+  nav .sub-menu {
+    display: none;
+  }
 }
 
-nav .brand {
-  margin-left: 20px;
+nav .brand, nav .fa-bars {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav ul {
@@ -69,25 +88,19 @@ nav ul {
   padding: 0;
   margin: 0;
 }
+
 nav ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
+nav ul.sub-menu {
+  margin-top: 10px;
+}
+
 nav a:hover {
   color: RoyalBlue;
 }
-/*@media(max-width: 900px){
-  nav ul {
-    display: none;
-  }
-  nav:hover ul {
-    display: block;
-  }
-  nav ul li {
-    display: block;
-  }
-}*/
 
 footer {
   padding: 10px;
@@ -125,7 +138,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.1em;
 }
 @media(max-width:600px) {
   .hero {
@@ -137,7 +150,9 @@ hr {
 }
 
 .hero h1 {
+  font-family: 'Caveat', sans-serif;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .hero h1,
@@ -146,8 +161,20 @@ hr {
 }
 @media(max-width:600px) {
   .hero h1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
+}
+
+.jumbo {
+  background-image: url('assets/lookup.jpg');
+  background-size: cover;
+  background-position: center top;
+  min-height: 300px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .inter {
@@ -162,6 +189,7 @@ hr {
   width: 100%;
   justify-content: flex-start;;
   align-items: center;
+  line-height: 1.5;
 }
 @media(max-width: 1200px) {
   .inter {
@@ -185,7 +213,6 @@ hr {
 }
 
 .inter h1 {
-  text-transform: uppercase;
   font-weight: lighter;
 }
 
