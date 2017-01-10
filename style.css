@@ -222,8 +222,14 @@ hr {
 }
 
 .hero, .jumbo {
-  -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 96%);
-  clip-path: polygon(0 0,100% 0,100% 100%,0% 96%);
+  -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 90%);
+  clip-path: polygon(0 0,100% 0,100% 100%,0% 90%);
+}
+@media(max-width: 600px) {
+  .hero, .jumbo {
+    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 95%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 95%);
+  }
 }
 
 .inter {
