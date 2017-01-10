@@ -221,6 +221,11 @@ hr {
   background-position: center 26%;
 }
 
+.hero, .jumbo {
+  -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 96%);
+  clip-path: polygon(0 0,100% 0,100% 100%,0% 96%);
+}
+
 .inter {
   min-height: 900px;
   padding: 50px 40px;
