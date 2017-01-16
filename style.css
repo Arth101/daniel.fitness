@@ -161,6 +161,10 @@ hr {
   margin: 0 auto;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 .dark {
   color: white;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
@@ -458,4 +462,90 @@ q {
   .info div:last-child {
     width: 100%;
   }
+}
+
+/* Pricing table */
+
+.group {
+  display: flex;
+}
+@media(max-width: 699px) {
+  .group {
+    flex-direction: column;
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid-1-5 {
+  margin: 2px;
+  border: 2px solid royalblue;
+  padding: 1.25em;
+  padding-bottom: 2.5em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+  @media screen and (min-width: 700px) {
+    .grid-1-5 {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .grid-1-5 {
+      width: 33.3333333%;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    .grid-1-5 {
+       width: 20%;
+    }
+  }
+
+.grid-1-5 h2, .grid-1-5 h3, .grid-1-5 p, .grid-1-5 ul {
+  margin: 0
+}
+.grid-1-5 h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+.grid-1-5 h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+.grid-1-5 p {
+  font-size: 0.875em;
+}
+.grid-1-5 p, .grid-1-5 ul {
+  margin:0 0 1.5em
+}
+.grid-1-5 ul {
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+.grid-1-5 ul li {
+  margin: 0 0 0.8333333333333333em;
+}
+.uppercase, .button, .grid-1-5 h2 {
+  text-transform: uppercase;
+}
+sup, .small {
+  font-size: 0.6125em;
+}
+
+.grid-1-5 a {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
 }
