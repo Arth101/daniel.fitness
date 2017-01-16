@@ -225,6 +225,11 @@ section {
   background-position: center 26%;
 }
 
+.jumbo.pricing {
+  background-image: url('assets/pricing.jpg');
+  background-position: center 26%;
+}
+
 .hero, .jumbo {
   -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0% 90%);
   clip-path: polygon(0 0,100% 0,100% 100%,0% 90%);
