@@ -145,11 +145,34 @@ nav .burger {
   }
 }
 
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-info a {
+  cursor: pointer;
+}
+
+.contact-info i {
+  margin-right: 20px;
+}
+
+.contact-info .fa-phone {
+  margin-left: 5px;
+}
+
+.VAT {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+}
+
 footer {
   background-color: royalblue;
   color: white;
   line-height: 1.5;
-  padding: 15px;
+  padding: 8px;
   margin-top: 50px;
   text-align: center;
   box-shadow: 0px 0px 0px 4px royalblue;
@@ -231,11 +254,16 @@ section {
   background-size: cover;
   background-position: center top;
   min-height: 300px;
+  height: 40vw;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.jumbo h1 {
+  font-size: 3.5em;
 }
 
 .jumbo.about {
@@ -514,6 +542,7 @@ q {
   display: table;
   clear: both;
 }
+
 .grid-1-5 {
   margin: 2px;
   border: 2px solid royalblue;
@@ -570,9 +599,11 @@ q {
 .grid-1-5 ul li {
   margin: 0 0 0.8333333333333333em;
 }
+
 .uppercase, .button, .grid-1-5 h2 {
   text-transform: uppercase;
 }
+
 sup, .small {
   font-size: 0.6125em;
 }
@@ -584,11 +615,37 @@ sup, .small {
   bottom: 20px;
 }
 
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  margin: 2px;
+  border: 2px solid royalblue;
+  padding: 1.25em;
+  padding-bottom: 2.5em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  width: 100%;
+}
+
+  @media screen and (min-width: 1000px) {
+    .price-box {
+      width: 302px;
+    }
+  }
+
 /* TDB animation */
 
 .tdb-animate {
-  text-shadow: 2px 2px 1px black;
+  color: #fff;
+}
+
+.tdb-animate:hover {
   animation: glitch 10s infinite;
+  text-decoration: none;
 }
 
 @keyframes glitch {
