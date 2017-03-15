@@ -16,3 +16,13 @@ function expand() {
     expanded = false;
   }
 }
+var scrollToContact = function() {
+  console.log("HEY");
+  document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+}
+
+var classname = document.querySelector('.contact-link');
+Array.from(classname).forEach(function(element) {
+  console.log("plz");
+  element.addEventListener('click', scrollToContact);
+});
